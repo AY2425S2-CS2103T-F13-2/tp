@@ -9,7 +9,7 @@
         "project-team": "Project team",
         "john-doe": "John Doe",
         "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
+        "foong-hong-yi": "Foong Hong Yi",
         "emmanuel-chan-shi-hong": "Emmanuel Chan Shi Hong",
         "noel-lim": "Noel Lim"
       },
@@ -147,6 +147,14 @@
       "title": "John Doe's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/mogmyij.md",
+      "title": "Hong Yi's' Project Portfolio Page",
+      "headings": {
+        "project-powerbake": "Project: PowerBake"
       },
       "headingKeywords": {}
     }
