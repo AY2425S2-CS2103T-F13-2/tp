@@ -7,7 +7,7 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
+        "mihir-niyogi": "Mihir Niyogi",
         "nigel-chan": "Nigel Chan",
         "foong-hong-yi": "Foong Hong Yi",
         "emmanuel-chan-shi-hong": "Emmanuel Chan Shi Hong",
@@ -145,6 +145,14 @@
     },
     {
       "src": "team/emmanuel2001.md",
+      "headings": {
+        "project-powerbake": "Project: PowerBake"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/mihirniyogi.md",
+      "title": "Mihir Niyogi's Project Portfolio Page\"",
       "headings": {
         "project-powerbake": "Project: PowerBake"
       },
