@@ -10,7 +10,7 @@
         "john-doe": "John Doe",
         "jane-doe": "Jane Doe",
         "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
+        "emmanuel-chan-shi-hong": "Emmanuel Chan Shi Hong",
         "noel-lim": "Noel Lim"
       },
       "headingKeywords": {}
@@ -132,6 +132,13 @@
       "title": "",
       "headings": {
         "addressbook-level-3": "AddressBook Level-3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/emmanuel2001.md",
+      "headings": {
+        "project-powerbake": "Project: PowerBake"
       },
       "headingKeywords": {}
     },
