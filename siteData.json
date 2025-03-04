@@ -7,8 +7,8 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
+        "mihir-niyogi": "Mihir Niyogi",
+        "nigel-chan": "Nigel Chan",
         "foong-hong-yi": "Foong Hong Yi",
         "emmanuel-chan-shi-hong": "Emmanuel Chan Shi Hong",
         "noel-lim": "Noel Lim"
@@ -136,7 +136,23 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/cyhni.md",
+      "title": "Nigel Chan's Project Portfolio Page",
+      "headings": {
+        "project-powerbake": "Project: PowerBake"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "team/emmanuel2001.md",
+      "headings": {
+        "project-powerbake": "Project: PowerBake"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/mihirniyogi.md",
+      "title": "Mihir Niyogi's Project Portfolio Page\"",
       "headings": {
         "project-powerbake": "Project: PowerBake"
       },
