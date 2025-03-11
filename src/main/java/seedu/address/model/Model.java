@@ -6,13 +6,15 @@ import java.util.function.Predicate;
 import javafx.collections.ObservableList;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.model.client.Client;
+import seedu.address.model.pastry.Pastry;
 
 /**
  * The API of the Model component.
  */
 public interface Model {
-    /** {@code Predicate} that always evaluate to true */
+    /** {@code Predicate} that always evaluates to true */
     Predicate<Client> PREDICATE_SHOW_ALL_PERSONS = unused -> true;
+    Predicate<Pastry> PREDICATE_SHOW_ALL_PASTRIES = unused -> true;
 
     /**
      * Replaces user prefs data with the data in {@code userPrefs}.
@@ -52,6 +54,8 @@ public interface Model {
     /** Returns the AddressBook */
     ReadOnlyAddressBook getAddressBook();
 
+    //// Client-related methods ////
+
     /**
      * Returns true if a person with the same identity as {@code person} exists in the address book.
      */
@@ -84,4 +88,39 @@ public interface Model {
      * @throws NullPointerException if {@code predicate} is null.
      */
     void updateFilteredPersonList(Predicate<Client> predicate);
+
+    //// Pastry-related methods ////
+
+    /**
+     * Returns true if a pastry with the same identity as {@code pastry} exists in the address book.
+     */
+    boolean hasPastry(Pastry pastry);
+
+    /**
+     * Deletes the given pastry.
+     * The pastry must exist in the address book.
+     */
+    void deletePastry(Pastry target);
+
+    /**
+     * Adds the given pastry.
+     * {@code pastry} must not already exist in the address book.
+     */
+    void addPastry(Pastry pastry);
+
+    /**
+     * Replaces the given pastry {@code target} with {@code editedPastry}.
+     * {@code target} must exist in the address book.
+     * The pastry identity of {@code editedPastry} must not be the same as another existing pastry in the address book.
+     */
+    void setPastry(Pastry target, Pastry editedPastry);
+
+    /** Returns an unmodifiable view of the filtered pastry list */
+    ObservableList<Pastry> getFilteredPastryList();
+
+    /**
+     * Updates the filter of the filtered pastry list to filter by the given {@code predicate}.
+     * @throws NullPointerException if {@code predicate} is null.
+     */
+    void updateFilteredPastryList(Predicate<Pastry> predicate);
 }

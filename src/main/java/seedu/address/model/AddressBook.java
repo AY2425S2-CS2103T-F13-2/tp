@@ -8,6 +8,8 @@ import javafx.collections.ObservableList;
 import seedu.address.commons.util.ToStringBuilder;
 import seedu.address.model.client.Client;
 import seedu.address.model.client.UniquePersonList;
+import seedu.address.model.pastry.Pastry;
+import seedu.address.model.pastry.UniquePastryList;
 
 /**
  * Wraps all data at the address-book level
@@ -16,6 +18,7 @@ import seedu.address.model.client.UniquePersonList;
 public class AddressBook implements ReadOnlyAddressBook {
 
     private final UniquePersonList persons;
+    private final UniquePastryList pastries;
 
     /*
      * The 'unusual' code block below is a non-static initialization block, sometimes used to avoid duplication
@@ -26,6 +29,7 @@ public class AddressBook implements ReadOnlyAddressBook {
      */
     {
         persons = new UniquePersonList();
+        pastries = new UniquePastryList();
     }
 
     public AddressBook() {}
@@ -49,12 +53,21 @@ public class AddressBook implements ReadOnlyAddressBook {
     }
 
     /**
+     * Replaces the contents of the pastry list with {@code pastries}.
+     * {@code persons} must not contain duplicate persons.
+     */
+    public void setPastries(List<Pastry> pastries) {
+        this.pastries.setPastries(pastries);
+    }
+
+    /**
      * Resets the existing data of this {@code AddressBook} with {@code newData}.
      */
     public void resetData(ReadOnlyAddressBook newData) {
         requireNonNull(newData);
 
         setPersons(newData.getPersonList());
+        setPastries(newData.getPastryList());
     }
 
     //// person-level operations
@@ -94,6 +107,43 @@ public class AddressBook implements ReadOnlyAddressBook {
         persons.remove(key);
     }
 
+    //// pastry-level operations
+
+    /**
+     * Returns true if a pastry with the same identity as {@code pastry} exists in the address book.
+     */
+    public boolean hasPastry(Pastry pastry) {
+        requireNonNull(pastry);
+        return pastries.contains(pastry);
+    }
+
+    /**
+     * Adds a pastry to the address book.
+     * The pastry must not already exist in the address book.
+     */
+    public void addPastry(Pastry p) {
+        pastries.add(p);
+    }
+
+    /**
+     * Replaces the given pastry {@code target} in the list with {@code editedPastry}.
+     * {@code target} must exist in the address book.
+     * The pastry identity of {@code editedPastry} must not be the same as another existing person in the address book.
+     */
+    public void setPastry(Pastry target, Pastry editedPastry) {
+        requireNonNull(editedPastry);
+
+        pastries.setPastry(target, editedPastry);
+    }
+
+    /**
+     * Removes {@code key} from this {@code AddressBook}.
+     * {@code key} must exist in the address book.
+     */
+    public void removePastry(Pastry key) {
+        pastries.remove(key);
+    }
+
     //// util methods
 
     @Override
@@ -106,6 +156,11 @@ public class AddressBook implements ReadOnlyAddressBook {
     @Override
     public ObservableList<Client> getPersonList() {
         return persons.asUnmodifiableObservableList();
+    }
+
+    @Override
+    public ObservableList<Pastry> getPastryList() {
+        return pastries.asUnmodifiableObservableList();
     }
 
     @Override
@@ -125,6 +180,6 @@ public class AddressBook implements ReadOnlyAddressBook {
 
     @Override
     public int hashCode() {
-        return persons.hashCode();
+        return persons.hashCode() + pastries.hashCode();
     }
 }

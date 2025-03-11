@@ -12,6 +12,7 @@ import javafx.collections.transformation.FilteredList;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.commons.core.LogsCenter;
 import seedu.address.model.client.Client;
+import seedu.address.model.pastry.Pastry;
 
 /**
  * Represents the in-memory model of the address book data.
@@ -22,6 +23,7 @@ public class ModelManager implements Model {
     private final AddressBook addressBook;
     private final UserPrefs userPrefs;
     private final FilteredList<Client> filteredPersons;
+    private final FilteredList<Pastry> filteredPastries;
 
     /**
      * Initializes a ModelManager with the given addressBook and userPrefs.
@@ -34,6 +36,7 @@ public class ModelManager implements Model {
         this.addressBook = new AddressBook(addressBook);
         this.userPrefs = new UserPrefs(userPrefs);
         filteredPersons = new FilteredList<>(this.addressBook.getPersonList());
+        filteredPastries = new FilteredList<>(this.addressBook.getPastryList());
     }
 
     public ModelManager() {
@@ -111,12 +114,33 @@ public class ModelManager implements Model {
         addressBook.setPerson(target, editedPerson);
     }
 
+    //=========== Pastry Operations ================================================================================
+
+    @Override
+    public boolean hasPastry(Pastry pastry) {
+        requireNonNull(pastry);
+        return addressBook.hasPastry(pastry);
+    }
+
+    @Override
+    public void deletePastry(Pastry target) {
+        addressBook.removePastry(target);
+    }
+
+    @Override
+    public void addPastry(Pastry pastry) {
+        addressBook.addPastry(pastry);
+        updateFilteredPastryList(PREDICATE_SHOW_ALL_PASTRIES);
+    }
+
+    @Override
+    public void setPastry(Pastry target, Pastry editedPastry) {
+        requireAllNonNull(target, editedPastry);
+        addressBook.setPastry(target, editedPastry);
+    }
+
     //=========== Filtered Person List Accessors =============================================================
 
-    /**
-     * Returns an unmodifiable view of the list of {@code Person} backed by the internal list of
-     * {@code versionedAddressBook}
-     */
     @Override
     public ObservableList<Client> getFilteredPersonList() {
         return filteredPersons;
@@ -128,13 +152,25 @@ public class ModelManager implements Model {
         filteredPersons.setPredicate(predicate);
     }
 
+    //=========== Filtered Pastry List Accessors =============================================================
+
+    @Override
+    public ObservableList<Pastry> getFilteredPastryList() {
+        return filteredPastries;
+    }
+
+    @Override
+    public void updateFilteredPastryList(Predicate<Pastry> predicate) {
+        requireNonNull(predicate);
+        filteredPastries.setPredicate(predicate);
+    }
+
     @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
         }
 
-        // instanceof handles nulls
         if (!(other instanceof ModelManager)) {
             return false;
         }
@@ -142,7 +178,7 @@ public class ModelManager implements Model {
         ModelManager otherModelManager = (ModelManager) other;
         return addressBook.equals(otherModelManager.addressBook)
                 && userPrefs.equals(otherModelManager.userPrefs)
-                && filteredPersons.equals(otherModelManager.filteredPersons);
+                && filteredPersons.equals(otherModelManager.filteredPersons)
+                && filteredPastries.equals(otherModelManager.filteredPastries);
     }
-
 }
