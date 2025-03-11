@@ -1,7 +1,5 @@
 package seedu.address.model.pastry;
 
-import seedu.address.model.client.Client;
-
 public class Pastry {
     private final Name name;
     private final Price price;

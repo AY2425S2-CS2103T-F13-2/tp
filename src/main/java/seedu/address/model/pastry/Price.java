@@ -9,7 +9,6 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
  */
 public class Price {
 
-
     public static final String MESSAGE_CONSTRAINTS =
             "Prices should be of the form '3', '6.5' or '123.57'";
 
