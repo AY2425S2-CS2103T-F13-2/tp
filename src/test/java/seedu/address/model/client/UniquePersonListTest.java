@@ -15,8 +15,6 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.model.client.Client;
-import seedu.address.model.client.UniquePersonList;
 import seedu.address.model.client.exceptions.DuplicatePersonException;
 import seedu.address.model.client.exceptions.PersonNotFoundException;
 import seedu.address.testutil.PersonBuilder;
