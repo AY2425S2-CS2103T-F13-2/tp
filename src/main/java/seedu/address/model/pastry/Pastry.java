@@ -1,9 +1,18 @@
 package seedu.address.model.pastry;
 
+/**
+ * Represents a Pastry in the address book.
+ */
 public class Pastry {
     private final Name name;
     private final Price price;
 
+    /**
+     * Every field must be present and not null.
+     *
+     * @param name
+     * @param price
+     */
     public Pastry(Name name, Price price) {
         this.name = name;
         this.price = price;
