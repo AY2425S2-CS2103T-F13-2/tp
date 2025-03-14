@@ -11,6 +11,6 @@ with(this){return _c('h3',{attrs:{"id":"project-powerbake"}},[_v("Project: Power
 with(this){return _c('ul',[_c('li',[_c('p',[_c('strong',[_v("New Feature")]),_v(": yup")]),_v(" "),_c('ul',[_c('li',[_v("What it does: bakeeeeee")]),_v(" "),_c('li',[_v("Justification: justified")]),_v(" "),_c('li',[_v("Highlights: highlighter")]),_v(" "),_c('li',[_v("Credits: "),_c('em',[_v("{mention here if you reused any code/ideas from elsewhere or if a third-party library is heavily used in the feature so that a reader can make a more accurate judgement of how much effort went into the feature}")])])])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("New Feature")]),_v(": more stuff")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Code contributed")]),_v(": "),_c('a',{attrs:{"href":""}},[_v("RepoSense link")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Fri, 14 Mar 2025, 13:10:20 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Sat, 15 Mar 2025, 0:45:12 GMT+8]")])])])}
 }];
   
