@@ -16,6 +16,7 @@ import powerbake.address.logic.commands.EditCommand;
 import powerbake.address.logic.commands.ExitCommand;
 import powerbake.address.logic.commands.FindCommand;
 import powerbake.address.logic.commands.HelpCommand;
+import powerbake.address.logic.commands.RemarkCommand;
 import powerbake.address.logic.commands.ViewCommand;
 import powerbake.address.logic.parser.exceptions.ParseException;
 
@@ -76,6 +77,9 @@ public class AddressBookParser {
 
         case HelpCommand.COMMAND_WORD:
             return new HelpCommand();
+        
+        case RemarkCommand.COMMAND_WORD:
+            return new RemarkCommandParser().parse(arguments);
 
         default:
             logger.finer("This user input caused a ParseException: " + userInput);
