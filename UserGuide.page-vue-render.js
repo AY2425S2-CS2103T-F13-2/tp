@@ -413,6 +413,6 @@ with(this){return _c('h2',{attrs:{"id":"glossary"}},[_v("Glossary"),_c('a',{stat
 with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticClass:"markbind-table table table-bordered table-striped"},[_c('thead',[_c('tr',[_c('th',[_v("Term")]),_v(" "),_c('th',[_v("Explanation")])])]),_v(" "),_c('tbody',[_c('tr',[_c('td',[_v("Home folder")]),_v(" "),_c('td',[_v("The folder where Powerbake's' is saved. The home folder is used to store data files used by Powerbake.")])]),_v(" "),_c('tr',[_c('td',[_v("Command terminal")]),_v(" "),_c('td',[_v("A text-based interface for interacting with the computer. Examples include the Command Prompt on Windows, Terminal on macOS, and bash on Linux.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Wed, 26 Mar 2025, 17:53:50 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Wed, 26 Mar 2025, 18:00:00 GMT+8]")])])])}
 }];
   
