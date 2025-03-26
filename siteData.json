@@ -110,7 +110,9 @@
         "powerbake-user-guide": "PowerBake User Guide",
         "introduction": "Introduction",
         "understanding-the-user-guide": "Understanding the User Guide",
-        "quick-start": "Quick start",
+        "getting-started": "Getting Started",
+        "installation": "Installation",
+        "starting-powerbake": "Starting PowerBake",
         "commands": "Commands",
         "adding-a-client-add-client": "Adding A Client: add client",
         "example": "Example:",
@@ -126,7 +128,8 @@
         "editing-the-data-file-2": "Editing the Data File",
         "faq": "FAQ",
         "known-issues": "Known issues",
-        "command-summary": "Command summary"
+        "command-summary": "Command summary",
+        "glossary": "Glossary"
       },
       "headingKeywords": {}
     },
