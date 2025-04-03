@@ -127,6 +127,7 @@
         "find-client-pastry-or-order-find": "Find Client, Pastry or Order : find",
         "viewing-client-pastry-or-order-view": "Viewing Client, Pastry or Order : view",
         "exiting-the-program-exit": "Exiting the program : exit",
+        "clearing-all-entries-clear": "Clearing all entries : clear",
         "storage": "Storage",
         "saving-data": "Saving Data",
         "editing-the-data-file": "Editing the Data File",
