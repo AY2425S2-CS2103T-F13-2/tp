@@ -62,8 +62,19 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data"
+        "adding-a-client": "Adding a Client",
+        "adding-a-pastry": "Adding a Pastry",
+        "adding-an-order": "Adding an Order",
+        "delete-a-client": "Delete a Client",
+        "delete-a-pastry": "Delete a Pastry",
+        "delete-an-order": "Delete an Order",
+        "edit-a-client": "Edit a Client",
+        "edit-a-pastry": "Edit a Pastry",
+        "edit-a-order": "Edit a Order",
+        "find-a-client": "Find a Client",
+        "find-a-pastry-order": "Find a Pastry, Order",
+        "view-all-clients": "View all Clients",
+        "view-all-pastry-orders": "View all Pastry, Orders"
       },
       "headingKeywords": {}
     },
