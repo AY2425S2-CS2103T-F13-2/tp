@@ -51,6 +51,7 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "add-order-add-order": "add order - Add Order",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -68,11 +69,14 @@
         "delete-an-order": "Delete an Order",
         "edit-a-client": "Edit a Client",
         "edit-a-pastry": "Edit a Pastry",
-        "edit-a-order": "Edit a Order",
+        "edit-an-order": "Edit an Order",
         "find-a-client": "Find a Client",
-        "find-a-pastry-order": "Find a Pastry, Order",
+        "find-a-pastry": "Find a Pastry",
+        "find-an-order": "Find an Order",
         "view-all-clients": "View all Clients",
-        "view-all-pastry-orders": "View all Pastry, Orders"
+        "view-all-pastry": "View all Pastry",
+        "view-all-orders": "View all Orders",
+        "appendix-planned-enhancements": "Appendix: planned enhancements"
       },
       "headingKeywords": {}
     },
