@@ -950,11 +950,8 @@ This will provide users with a quick reference to the available commands and the
 Currently, PowerBake only allows alphanumeric characters and spaces in client and pastry names. This is a limitation as
 some names may contain special characters such as slashes, hyphens, accented characters and different languages. In the future, we will enhance the validation to allow these characters so that names such as Janet Smith-Johnson, Mike O'Leary, María José and etc. can be added to our system. 
 
-Additionally, PowerBake currently allows for multiple consecutive spaces in names. This should not be allowed as it leads to inconsistent formatting and validation.
-
 **Proposed Changes**:
 - Allow for special characters and accented characters, widening the scope of valid names that can be added to the system.
-- Trim consecutive spaces to a single space. This will ensure that names are formatted consistently and correctly.
 
 These changes are expected to improve PowerBake's consistency and usability especially when used with other languages.
 
@@ -1020,3 +1017,13 @@ Currently, the `clear` command will delete **ALL** stored data. <br>This may not
 - Implementation of `clear` command to take in arguments such as `client`, `pastry` and `order` to specify which list to clear.
 
 These changes will make the `clear` command more versatile to use and not as destructive.
+
+##### 9. **Enhance Parsing of User Input**
+
+Currently, PowerBake allows for multiple consecutive spaces in names. This should not be allowed as it leads to inconsistent formatting and validation.
+
+**Proposed Changes**:
+- Trim consecutive spaces to a single space. This will ensure that names are formatted consistently and correctly.
+
+These changes are expected to improve PowerBake's consistency and usability.
+
