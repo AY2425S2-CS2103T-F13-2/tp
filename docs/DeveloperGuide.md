@@ -1027,3 +1027,11 @@ Currently, PowerBake allows for multiple consecutive spaces in names. This shoul
 
 These changes are expected to improve PowerBake's consistency and usability.
 
+##### 10. **Inconvenience on editing `Order` Status**
+
+Currently, PowerBake does not update the selected order's status in the Details Panel on the right when an order is edited. This is due to a known limitation of JavaFX library where the properties of a property are unable to be "listened to". See [here](https://stackoverflow.com/questions/45081431/update-events-from-objectproperty-just-like-in-observablelist) for details. This should not be allowed as it is an inconvenience for the user to switch to another order and back again for the UI to refresh itself. 
+
+**Proposed Changes**:
+- Update the UI automatically when an order is edited.
+
+These changes are expected to improve PowerBake's consistency and usability.
