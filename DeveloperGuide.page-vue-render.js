@@ -566,6 +566,6 @@ with(this){return _c('ol',{attrs:{"start":"8"}},[_c('li',[_c('strong',[_v("Enhan
 with(this){return _c('ul',[_c('li',[_v("Implement a confirmation dialog that appears when the user types \"clear\" and hits Enter")]),_v(" "),_c('li',[_v("The confirmation dialog will clearly state the consequences of the action and require the user to confirm before proceeding")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Mon, 7 Apr 2025, 22:17:43 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Tue, 8 Apr 2025, 11:06:15 GMT+8]")])])])}
 }];
   
